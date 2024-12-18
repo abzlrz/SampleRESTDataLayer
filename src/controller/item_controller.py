@@ -1,4 +1,4 @@
-from models.item_model import Item
+from src.models.item_model import Item
 from flask import jsonify
 
 def add_item_controller(request_data):
@@ -24,6 +24,7 @@ def add_item_controller(request_data):
                 "status": new_item.status
             }
         )
+    
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

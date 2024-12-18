@@ -1,4 +1,4 @@
-from config.db import get_db_connection
+from src.config.db import get_db_connection
 
 class Item:
     def __init__(self, id=None, name=None, description=None, location=None, ppu=None, uom=None, status=None):

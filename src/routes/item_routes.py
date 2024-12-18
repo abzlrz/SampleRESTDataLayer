@@ -1,5 +1,5 @@
 from flask import Blueprint, request
-from controller.item_controller import add_item_controller, update_item_controller
+from src.controller.item_controller import add_item_controller, update_item_controller
 
 item_routes = Blueprint('item_routes', __name__)
 
